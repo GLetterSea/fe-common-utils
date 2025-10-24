@@ -1,0 +1,40 @@
+{
+  "name": "fe-common-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc",
+    "dev": "tsc -w"
+  },
+  "imports": {
+    "#json": {
+      "node": "./dist/json/index.js",
+      "default": "./dist/json/index.js"
+    }
+  },
+  "exports": {
+    ".": {
+      "node": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./json": {
+      "node": "./dist/json/index.js",
+      "types": "./dist/json/index.d.ts",
+      "default": "./dist/json/index.js"
+    }
+  },
+  "keywords": ["frontend", "utils"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0-0",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
+  }
+}
