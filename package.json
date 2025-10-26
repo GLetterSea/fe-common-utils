@@ -10,12 +10,6 @@
     "build": "rm -rf dist && tsc",
     "dev": "tsc -w"
   },
-  "imports": {
-    "#json": {
-      "node": "./dist/json/index.js",
-      "default": "./dist/json/index.js"
-    }
-  },
   "exports": {
     ".": {
       "node": "./dist/index.js",
